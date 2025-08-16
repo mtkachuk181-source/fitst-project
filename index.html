@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Моє портфоліо</title>
+	<style>
+		html, body {
+			height: 100%;
+			margin:0;
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+			font-family: Arial, sans-serif;
+			background-color: f4f4f4;
+		}
+
+		/* Шапка*/
+		header {
+			background-color:  #117a8c;
+			color: white;
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		nav ul li{
+			position: relative;
+
+		}
+
+		nav ul li a {
+			color: white;
+			padding: 10px 15px;
+			display: block;
+			text-decoration: none;
+
+		}
+
+		nav ul li a:hover {
+			background-color: #555;
+		}
+
+
+		/*Випадаюче меню*/
+		nav ul ul {
+			display: none;
+			position: absolute;
+			top: 100%;
+			background-color: #444;
+			min-width: 150px;
+		}
+
+		nav ul ul li {
+			width: 100%;
+		}
+
+		nav ul li:hover > ul {
+			display: block;
+		}
+
+		/* Аватар */
+		.avatar {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin-top: 5px;
+		}
+
+		/* Контент */
+		main {
+			flex: 1;
+			padding: 20px;
+			max-width: 900px;
+			margin: auto;
+		}
+
+		h1, h2 {
+			color: #333;
+		}
+
+		section {
+			background: white;
+			padding: 20px;
+			margin-bottom: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		ul {
+			margin: 0;
+			padding-left: 20px;
+		}
+
+		/* Футер */ 
+		footer {
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: 10px;
+		}
+		/* Для мобільних: аватар по центру */
+		@media (max-width: 768) {
+			header {
+				flex-direction: column;
+				align-items: center;
+			}
+			nav {
+				order: 2;
+			}
+			.avatar {
+				order: 1;
+				margin: 10px auto;
+			}
+		}
+		
+	</style>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+			 <ul>
+				<li><a href="#">Головна</a></li>
+				<li>
+					<a href="#">Послуги </a>
+					<ul> 
+						<li><a href="#">Веб-розробка</a></li>
+						<li><a href="https://legorobocoding.ltd.ua/ispas/game/mukola" target="_blank">Розробка ігор</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Контакти</a></li>
+				<li><a href="contact.html">Контакти</a></li>
+			</ul>
+		</nav>
+
+		<!-- Аватар -->
+		<img src="eabfbc154c06f6212bdb09d99040f530_w200.gif" alt="Мій аватар" class="avatar">
+	</header>
+
+	<main>
+		<section>
+		<h1>Микола<h1>
+		<p>Я програміст, спеціалізуюсь на веб-розробці та створенні ігор. Прагну створювати зручні, сучасні та ефективні рішення для користувачів.</p>
+		</section>
+
+		<section>
+			<h2>Навички</h2>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JAVA SCRIPT</li>
+				<li>Розробка ігор (CONSTRUCT-3)</li>
+				<li>Git та командна робота</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Досвід роботи</h2>
+			<p><strong>Фриланс</strong> (2025 - теперішній час)</p>
+			<ul>
+				<li>Створення сайтів та інтернет-магазинів</li>
+				<li>Розробка невеликих ігор</li>
+			</ul>	
+		</section>
+
+		<section>
+			<h2>Освіта</h2>
+			<p><strong>Курси програмування</strong>, [LEGO ROBO CODING], [період навчання]</p>
+			<p><strong>Курси англійської</strong>, [Школа], [період навчання], [Мій рівень B1]</p>
+		</section>
+
+		<section>
+			<h2>Контакти</h2>
+			 <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        	<p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+        	<p>GitHub: <a href="#">github.com/yourprofile</a></p>
+		</section>		
+	</main>
+
+	<footer>
+		<p> 2025 Усі права захищені</p>
+	</footer>
+
+</body>
+</html>
+
