@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Контакти</title>
+	
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			background-color: #f4f4f4;
+		}
+		header {
+			background-color:  #117a8c;
+			color: white;
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		nav ul li{
+			position: relative;
+
+		}
+
+		nav ul li a {
+			color: white;
+			padding: 10px 15px;
+			display: block;
+			text-decoration: none;
+
+		}
+
+		nav ul li a:hover {
+			background-color: #555;
+		}
+
+
+		/*Випадаюче меню*/
+		nav ul ul {
+			display: none;
+			position: absolute;
+			top: 100%;
+			background-color: #444;
+			min-width: 150px;
+		}
+
+		nav ul ul li {
+			width: 100%;
+		}
+
+		nav ul li:hover > ul {
+			display: block;
+		}
+
+		/* Аватар */
+		.avatar {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin-top: 5px;
+		}
+
+
+		main {
+			max-width: 900px;
+			margin: auto;
+			padding: 20px;
+			}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+			color: #333;
+		}	
+		.contact-form {
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+		}
+
+		.contact-form label {
+			display: block;
+			margin-top: 10px;
+			font-weight: bold;
+		}
+
+
+		.contact-form input,
+		.contact-form texterea {
+			width: 100%;
+			padding: 10px;
+			margin-top: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+		}
+
+		.contact-form button {
+			margin-top: 15px;
+			padding: 12px 20px;
+			background-color: #333;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		.contact-form button:hover {
+			background-color: #555;
+ 		}
+
+ 		/* Карта */
+ 		.map {
+ 			margin-top: 20px;
+ 			border-radius: 8px;
+ 			overflow: hidden;
+ 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		iframe {
+			width: 100%;
+			height: 400px;
+			border: 0;
+		}
+
+		footer {
+			background-color: #333;	
+			color: white;
+			text-align: center;
+			padding: 10px;
+			margin-top: 20px;
+		}
+
+		/* Для мобільних */
+		@media (max-width: 600px) {
+			main {
+				padding: 10px;
+			}
+			iframe {
+				height: 300px;
+			}
+		}
+	</style>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+			 <ul>
+				<li><a href="index.html">Головна</a></li>
+				<li>
+					<a href="#">Послуги </a>
+					<ul> 
+						<li><a href="#">Веб-розробка</a></li>
+						<li><a href="https://legorobocoding.ltd.ua/ispas/game/mukola" target="_blank">Розробка ігор</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Контакти</a></li>
+				<li><a href="contact.html">Контакти</a></li>
+			</ul>
+		</nav>
+
+		<!-- Аватар -->
+		<img src="eabfbc154c06f6212bdb09d99040f530_w200.gif" alt="Мій аватар" class="avatar">
+	</header>
+
+		<main>
+			<h1>Зв'яжіться зі мною</h1>
+
+			<div class="contact-form">
+				<form>
+					<label for="name">Ваше ім'я </label>
+					<input type="text" id="name" name="name"placeholder="Введіть ім'я" required>
+
+					<label for="email">Ваш Email</label>
+					<input type="text" id="email" name="email" placeholder="Введіть email" required 
+					>
+
+					<label for="subject">Тема</label>
+					<input type="text" id="subject" name="subject" placeholder="Введіть тему" required 
+					>
+
+					<label for="message">Повідомлення</label>
+					<textarea id="message" name="message" rows="5" placeholder="Напишіть повідомлення..." required></textarea>
+
+					 <button type="submit">Надіслати</button>
+				</form>
+			</div>
+
+			 <div class="map">
+        <!-- Google Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39149.74232043756!2d25.23182905890613!3d48.29862359272776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736ba33be578cc7%3A0xe6cc765e56cf35fc!2z0IbRgdC_0LDRgSwg0KfQtdGA0L3RltCy0LXRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNTkyMjI!5e1!3m2!1suk!2sua!4v1756211677455!5m2!1suk!2sua" 
+        width="600"
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        	
+        </iframe>
+    </div>
+  </main>
+
+  <footer>
+  	<p>© 2025 Усі права захищені</p>
+  </footer>
+
+		
+</body>
+</html>
+
+ 
+
+
+
+
+
+
+
