@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Моє портфоліо</title>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+		}
+
+		/* Шапка*/
+		header {
+			background-color: #117a8c;
+			color: white;
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+        }
+
+        nav ul {
+        	list-style: none;
+        	margin: 0;
+        	padding: 0;
+        	display: flex;
+        }
+
+        nav ul li{
+        	position: relative;	
+        }
+
+        nav ul li a {
+        	color: white;
+        	padding: 10px 15px;
+        	display: block;
+        	text-decoration: none;
+        }
+
+        nav ul li a:hover {
+        	background-color: #555;
+        }
+
+        /*Випадаюче меню*/
+        nav ul ul {
+        	display: none;
+        	position: absolute;
+        	top: 100%;
+        	background-color: #444;
+        	min-width: 150px;
+        }
+
+        nav ul ul li {
+        	width: 100%;
+        }
+        nav ul li:hover > ul {
+        	display: block;
+        }
+
+        /*Аватар*/
+        .avatar {
+        	width: 60px;
+        	height: 60px;
+        	border-radius: 50%;
+        	object-fit: cover;
+        	margin-top: 5px;
+        }
+
+        /* Контент */
+        main {
+        	flex: 1;
+        	padding: 20px;
+        	max-width: 1000px;
+        	margin: auto;
+        }
+
+        h1, h2 {
+        	color: #333;
+        }
+
+        section {
+        	background: white;
+        	padding: 20px;
+        	margin-bottom: 20px;
+        	border-radius: 8px;
+        	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+        	margin: 0;
+        	padding-left: 20px;
+        }
+
+        /* Галерея */
+        .gallery {
+        	display: grid;
+        	grid-template-columns: repeat(5, 1fr);
+        	gap: 10px;
+        }
+
+        .gallery img {
+        	width: 100%;
+        	height: 150px;
+        	object-fit: cover;
+        	border-radius: 6px;
+        	transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+        	transform: scale(1.05);
+        }
+
+        /* Футер */
+        footer {
+        	background-color: #333;
+        	color: white;
+        	text-align: center;
+        	padding: 10px;
+        }
+        /*Для мобільних: аватар по центру */
+        @media (max-width: 768px) {
+        	header {
+        		flex-direction: column;
+        		align-items: center;
+        	}
+        	nav {
+        		order: 2;
+        	}
+        	.avatar {
+        		order: 1;
+        		margin: 10px auto;
+        	}
+        	.gallery {
+        		grid-template-columns: repeat(2, 1fr);
+			}
+        }
+    </style>
+	</head>
+	<body>
+		
+			<header>
+				<nav>
+					<ul>
+						<li><a href="index.html">Головна</a></li>
+						<li>
+							<a href="#">Послуги </a>
+					<ul> 
+						<li><a href="#">Веб-розробка</a></li>
+						<li><a href="https://legorobocoding.ltd.ua/ispas/game/mukola" target="_blank">Розробка ігор</a></li>
+					</ul>
+				<li><a href="contact.html">Контакти</a><li></li>
+			</ul>
+			<ul>
+				<li><a href="my-projects.html">Галерея</a></li>
+			</ul>
+		</nav>
+
+		<!-- Аватар -->
+		<img src="eabfbc154c06f6212bdb09d99040f530_w200.gif" alt="Мій аватар" class="avatar">
+	</header>
+
+
+			<section>
+				<h2>Галерея</h2>
+				<div class="gallery">
+				<img src="фото 4.jfif" alt="img1">
+				<img src="фото 1.jfif" alt="img2">
+				<img src="фото 2.jpg" alt="img3">
+				<img src="фото 3.png" alt="img4">
+				<img src="фото 4.jfif" alt="img5">
+				<img src="фото 1.jfif" alt="img6">
+				<img src="фото 2.jpg" alt="img7">
+				<img src="фото 3.png" alt="img8">
+				<img src="фото 4.jfif" alt="img9">
+				<img src="фото 1.jfif" alt="img10">
+				<img src="фото 2.jpg" alt="img11">
+				<img src="фото 3.png" alt="img12">
+				<img src="фото 4.jfif" alt="img13">
+				<img src="фото 1.jfif" alt="img14">
+				<img src="фото 2.jpg" alt="img15">
+				<img src="фото 3.png" alt="img16">
+				<img src="фото 4.jfif" alt="img17">
+				<img src="фото 1.jfif" alt="img18">
+				<img src="фото 2.jpg" alt="img19">
+				<img src="фото 3.png" alt="img20">
+				<img src="фото 4.jfif" alt="img21">
+				<img src="фото 1.jfif" alt="img22">
+				<img src="фото 2.jpg" alt="img23">
+				<img src="фото 3.png" alt="img24">
+				<img src="фото 4.jfif" alt="img25">
+			</div>
+		</section>
+
+
+		<footer>
+			<p> 2025 Усі права захищені</p>
+		</footer>
+
+
+	</body>
+    </html>
+
+
